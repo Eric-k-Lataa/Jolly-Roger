@@ -1,0 +1,142 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eeeeee;
+  color: #201e43;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #201e43;
+}
+
+header h1 span {
+  color: #508c9b;
+}
+
+header .img-encabezado {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: auto;
+  align-items: center;
+}
+
+/* Main container */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Titles */
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #134b70;
+}
+
+/* Flexbox and Grid wrappers */
+.wrapper, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6, .wrapper7, .wrapper8, .wrapper9, .wrapper10 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #134b70;
+}
+
+.wrapper2, .wrapper4, .wrapper7 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.wrapper3, .wrapper8, .wrapper10 {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.wrapper9 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+/* Box and Item styles */
+.box, .boxa {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100px;  /* Fijamos una altura para asegurarnos de que las cajas sean visibles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.grid-container .item1, .grid-container .item2, .grid-container .item3, .grid-container .item4, .grid-container .item5 {
+  background-color: #134b70;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  height: 100px;  /* Añadimos altura para las celdas de la cuadrícula */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container .item1 {
+  grid-column: span 2;
+}
+
+.grid-container .item5 {
+  grid-column: span 2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #134b70;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+  .wrapper2, .wrapper4, .wrapper7 {
+      grid-template-columns: 1fr;
+  }
+  .wrapper9 {
+      grid-template-columns: 1fr 1fr;
+  }
+}

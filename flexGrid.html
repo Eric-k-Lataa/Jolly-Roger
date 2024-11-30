@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas Flexbox y Grid</title>
+    <link rel="icon" type="image/x-icon" href="/img/flex.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flexboxG.css">
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">Erick Lataa <span>Ingeniero en computación en formación</span></a></h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="intro">
+            <h1 class="header-1">Prácticas Flexbox y Grid</h1>
+            <img src="./img/Grid.png" alt="Imagen de contacto" width="200px" class="img-encabezado">
+        </section>
+
+        <section class="contenido">
+            <div class="brand">
+              
+                <div class="title">1. Conjunto de cajas con flex</div>
+                <div class="wrapper">
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
+                    <div>Four</div>
+                    <div>Five</div>
+                    <div>Six</div>
+                    <div>Seven</div>
+                </div>
+
+                <div class="title">2. Conjunto de cajas con cuadricula</div>
+                <div class="wrapper2">
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
+                    <div>Four</div>
+                    <div>Five</div>
+                    <div>Six</div>
+                    <div>Seven</div>
+                </div>
+
+                <div class="title">3. Alineación de cajas con flex</div>
+                <div class="wrapper3">
+                    <div class="box1">One</div>
+                    <div class="box2">Two</div>
+                    <div class="box3">Three</div>
+                </div>
+
+                <div class="title">4. Alineación de cajas con cuadricula</div>
+                <div class="wrapper4">
+                    <div class="box1">One</div>
+                    <div class="box2">Two</div>
+                    <div class="box3">Three</div>
+                </div>
+
+                <div class="title">5. Cuadricula de llenado automatico</div>
+                <div class="wrapper5">
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
+                </div>
+
+                <div class="title">6. Número flexible de pistas</div>
+                <div class="wrapper6">
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
+                </div>
+
+                <div class="title">7. Un contenedor de cuadricula como bloque contenedor</div>
+                <div class="wrapper7">
+                    <div class="box1">One</div>
+                    <div class="box2">Two</div>
+                    <div class="box3">
+                        Este bloque está posicionado absolutamente. En este ejemplo, el contenedor de cuadricula es el
+                        bloque contenedor y los valores de desplazamiento de la posición absoluta se calculan desde los bordes
+                        exteriores del área en la que se ha colocado.
+                    </div>
+                    <div class="box4">Four</div>
+                </div>
+
+                <div class="title">8. Área de cuadricula como padre</div>
+                <div class="wrapper8">
+                    <div class="box1">One</div>
+                    <div class="box2">Two</div>
+                    <div class="box3">
+                        Three
+                        <div class="abspos">
+                            Este bloque está posicionado absolutamente. En este ejemplo, el área de la cuadricula es el bloque
+                            contenedor y los valores de desplazamiento de la posición absoluta se calculan desde los bordes
+                            exteriores del área de la cuadricula.
+                        </div>
+                    </div>
+                    <div class="box4">Four</div>
+                </div>
+
+                <div class="title">9. Diseño de cuadricula con elementos secundarios anidados</div>
+                <div class="wrapper9">
+                    <div class="box box1">
+                        <div class="nested">a</div>
+                        <div class="nested">b</div>
+                        <div class="nested">c</div>
+                    </div>
+                    <div class="box box2">Two</div>
+                    <div class="box box3">Three</div>
+                    <div class="box box4">Four</div>
+                    <div class="box box5">Five</div>
+                </div>
+
+                <div class="title">10. Uso de la pantalla contenido</div>
+                <div class="wrapper10">
+                    <div class="box box1">
+                        <div class="nested">a</div>
+                        <div class="nested">b</div>
+                        <div class="nested">c</div>
+                    </div>
+                    <div class="box box2">Two</div>
+                    <div class="box box3">Three</div>
+                    <div class="box box4">Four</div>
+                    <div class="box box5">Five</div>
+                </div>
+            </div>
+
+            <h2 class="head-2">Ejemplo Grid 1</h2>
+            <div class="grid-container">
+                <div class="item1">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>  
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+            </div>
+
+            <h2 class="head-2">Ejemplo Grid 2</h2>
+            <div class="wrapper6">
+                <div class="boxa">1</div>
+                <div class="boxa">2</div>
+                <div class="boxa">3</div>
+                <div class="boxa">4</div>
+                <div class="boxa">5</div>
+                <div class="boxa">6</div>
+                <div class="boxa">7</div>
+                <div class="boxa">8</div>
+                <div class="boxa">9</div>
+                <div class="boxa">10</div>
+                <div class="boxa">11</div>
+                <div class="boxa">12</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados - Erick Saúl Padilla Franco</p>
+    </footer>
+</body>
+</html>

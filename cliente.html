@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/cliente.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="shortcut icon" href="./img/db.png" type="image/x-icon">
+    <title>Base de datos materiales</title>
+    <script>
+        // Función para borrar el valor de un campo al hacer clic
+        function borrarValor(campo) {
+            if (campo.value === campo.defaultValue) {
+                campo.value = ""; // Borra el valor si coincide con el valor predeterminado
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="./index.html"><h1 class="header-main">Erick Lataa <span>Ingeniero en Computación en formación</span></h1></a>
+    
+    <div class="main-container">
+        <header class="header">
+            <h1 class="header-title">Base de datos Clientes</h1>
+            <div class="image-container">
+                <img src="./img/db.png" alt="Base de datos" class="logo-img">
+            </div>        
+        </header>
+
+        <form id="formulario" action="registrar.php" method="post" onsubmit="borrarCampos()">
+            <fieldset class="form-fieldset">
+                <div class="fieldset-header">
+                    <legend>Base de datos de clientes:</legend>
+                </div>
+                
+                <div class="form-fields">
+                    <div class="form-group">
+                        <label class="form-label" for="empresa">Empresa:</label>   
+                        <input class="form-input" placeholder="Empresa" type="text" name="empresa" id="empresa" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contacto">Contacto</label>   
+                        <input class="form-input" placeholder="Contacto" type="text" name="contacto" id="contacto" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="pais">País</label>   
+                        <input class="form-input" placeholder="País" type="text" name="pais" id="pais" value="" onfocus="borrarValor(this)">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <div class="form-actions">
+                <a class="action-button" href="./tblClientes.php">Ir a tabla de clientes</a>
+                <input class="action-button" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

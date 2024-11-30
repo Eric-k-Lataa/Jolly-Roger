@@ -1,0 +1,128 @@
+/* Paleta de colores */
+:root {
+    --dark-blue: #201e43;
+    --medium-blue: #134b70;
+    --light-blue: #508c9b;
+    --light-gray: #eeeeee;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.header-main {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.header-main span {
+    font-size: 1.2rem;
+    color: var(--color-3);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    color: #508c9b;
+}
+
+/* Estilo para la barra de navegación */
+header.header {
+    background-color: var(--medium-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header.header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Estilo para las imágenes en el encabezado */
+header .imagen img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* Estilo para los títulos de la página */
+h3 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo de la tabla */
+.table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid var(--light-blue);
+}
+
+.table-dark {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--medium-blue);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: var(--light-blue);
+}
+
+.table th {
+    background-color: var(--medium-blue);
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none;
+    color: var(--medium-blue);
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+/* Botón de formulario */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--medium-blue);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: var(--light-blue);
+}
+
+/* Estilos para el contenedor */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

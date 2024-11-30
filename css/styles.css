@@ -1,0 +1,249 @@
+/* Reset básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeeeee; /* Fondo claro */
+    color: #201e43; /* Texto oscuro */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat', cursive;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    font-size: 1.2rem;
+    color: #508c9b; /* Color suave de azul */
+}
+
+/* Encabezado */
+header {
+    background-color: #201e43; /* Fondo oscuro */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    font-size: 1.2rem;
+    color: #508c9b; /* Color suave de azul */
+}
+
+/* Menú de navegación */
+.fondo-nav {
+    background-color: #134b70; /* Azul más intenso */
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    color: #fb2576;
+}
+
+/* Sección de la imagen de fondo */
+.imagen-fondo {
+    background-image: url('./arena.avif'); /* Cambia la URL por una imagen real */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.color-fondo {
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro sobre la imagen */
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head-2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.location {
+    fill: #ffffff;
+}
+
+.p-ubicacion {
+    font-size: 1.2rem;
+}
+
+.boton {
+    background-color: #508c9b; /* Azul suave */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #134b70; /* Azul más intenso */
+}
+
+/* Main Container */
+.contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sombra {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Servicios */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.servicio {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.head-3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #201e43; /* Texto oscuro */
+}
+
+.icon-servicio svg {
+    fill: #134b70; /* Azul más intenso */
+}
+
+.p-servicio {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Contacto */
+.formulario {
+    margin-top: 40px;
+}
+
+.formulario form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #201e43; /* Texto oscuro */
+}
+
+.campos {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #201e43; /* Texto oscuro */
+}
+
+.text-input, .text-area {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #eeeeee; /* Fondo claro */
+}
+
+.text-area {
+    height: 120px;
+}
+
+.align-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    width: 200px;
+    padding: 12px 20px;
+    background-color: #508c9b; /* Azul suave */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #134b70; /* Azul más intenso */
+}
+
+/* Footer */
+footer {
+    background-color: #201e43; /* Fondo oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}

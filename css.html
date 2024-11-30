@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox y Grid</title>
+    <link rel="icon" type="image/x-icon" href="/img/css.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/CSS.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<a href="./index.html"><h1>Erick Lataa<span> Ingeniero en computación en formación</span></h1></a>
+<header class="encabezado">
+    <h1 class="header-1" style="color: rgb(215, 195, 241);">Prácticas de formato CSS</h1>
+    <img src="./img/css.png" alt="Contacto" class="img-encabezado">
+</header>
+<main class="contenedor">
+    <h2 class="head-2">Ejemplo CSS 1: Tablas de precios</h2>
+    <div class="price-table-container">
+        <div class="table">
+            <div class="title">Startup Plan</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">69</span>
+                <span class="frequency">/mo</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li><span class="material-icons check_circle">check_circle</span>Easy access</li>
+                    <li><span class="material-icons check_circle">check_circle</span>Easy access</li>
+                    <li><span class="material-icons check_circle">check_circle</span>Easy access</li>
+                    <li><span class="material-icons check_circle">check_circle</span>Easy access</li>
+                    <li><span class="material-icons check_circle">check_circle</span>Easy access</li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn">Try for free</a>
+            </div>
+        </div>
+
+        <div class="table recommended">
+            <div class="title">Pro Agent</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">99</span>
+                <span class="frequency">/mo</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Billed annually</li>
+                    <li>Billed annually</li>
+                    <li>Billed annually</li>
+                    <li>Billed annually</li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn recommended">Try for free</a>
+            </div>
+        </div>
+
+        <div class="table">
+            <div class="title">Enterprise</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">149</span>
+                <span class="frequency">/mo</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Billed annually</li>
+                    <li>Billed annually</li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn">Try for free</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="head-2">Ejemplo CSS 2: Barra de progreso circular</h2>
+    <div class="progressbar-container">
+        <div class="outer-box">
+            <div class="inner-box">50%</div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="80" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+
+    <h2 class="head-2">Ejemplo CSS 3: Notificaciones animadas</h2>
+    <div class="notification">
+        <div class="count">29</div>
+        <span class="material-icons">notifications</span>
+    </div>
+
+    <h2 class="head-2">Ejemplo CSS 4: Slider</h2>
+    <div class="slider-container">
+        <div class="slider-viewport">
+            <div class="slide" id="slide1">1</div>
+            <div class="slide" id="slide2">2</div>
+            <div class="slide" id="slide3">3</div>
+            <div class="slide" id="slide4">4</div>
+            <div class="slide" id="slide5">5</div>
+        </div>
+        <div class="links">
+            <a href="#slide1">1</a>
+            <a href="#slide2">2</a>
+            <a href="#slide3">3</a>
+            <a href="#slide4">4</a>
+            <a href="#slide5">5</a>
+        </div>
+    </div>
+
+    <h2 class="head-2">Ejemplo CSS 5: Barra de búsqueda</h2>
+    <div class="search-bar">
+        <input type="text" />
+        <div class="actions">
+            <button><span class="material-icons">mic</span></button>
+            <button><span class="material-icons">document_scanner</span></button>
+            <button><span class="material-icons">search</span></button>
+        </div>
+    </div>
+
+    <h2 class="head-2">Ejemplo CSS 6: Tarjetas animadas</h2>
+    <div class="cards element">
+        <div class="card">
+            <div class="header">
+                <div class="date">17 de Septiembre</div>
+                <div class="title">Crónica de una muerte anunciada</div>
+            </div>
+            <div class="footer">
+                <div class="autor">
+                    <a href="#">
+                        <img src="./img/img4.avif" alt="">
+                        <span>Gabriel García Márquez</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-1">
+            <div class="header">
+                <div class="date">18 de Septiembre</div>
+                <div class="title">Los Miserables</div>
+            </div>
+            <div class="footer">
+                <div class="autor">
+                    <a href="#">
+                        <img src="./img/img4.avif" alt="">
+                        <span>Victor Hugo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-2">
+            <div class="header">
+                <div class="date">19 de Septiembre</div>
+                <div class="title">Fahrenheit 451</div>
+            </div>
+            <div class="footer">
+                <div class="autor">
+                    <a href="#">
+                        <img src="./img/img4.avif" alt="">
+                        <span>Ray Bradbury</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-3">
+            <div class="header">
+                <div class="date">20 de Septiembre</div>
+                <div class="title">La isla del tesoro</div>
+            </div>
+            <div class="footer">
+                <div class="autor">
+                    <a href="#">
+                        <img src="./img/img4.avif" alt="">
+                        <span>R. L. Stevenson</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy; Erick Saúl Padilla Franco | Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

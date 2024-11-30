@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f6fab9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.header-main {
+  text-align: center;
+  background-color: var(--color-1);
+  color: var(--color-4);
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.header-main span {
+  font-size: 1.2rem;
+  color: var(--color-3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: 'Caveat', cursive;
+}
+
+h1, h2, h3 {
+  color: #cae6b2;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #8e3e63;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+header .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header .profile-img {
+  border-radius: 10%;
+  width: 130px;
+  height: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header .info h1 .nombre {
+  color:#f6fab9;
+  font-family: 'Caveat', cursive;
+  margin-bottom: 10px;
+}
+
+header .info .title {
+  font-size: 1.2rem;
+  color: #cae6b2;
+}
+
+header .contact .btn {
+  background-color: #d2649a;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+header .contact .btn:hover {
+  background-color: #8e3e63;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #8e3e63;
+}
+
+.section .content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #cae6b2;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #d2649a;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #8e3e63;
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+}

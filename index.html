@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Erick Lataa <span>Ingeniero en Computación en formación</span></h1>
+        <!-- Menu de navegación -->
+        <nav class="fondo-nav menu">
+            <a href="#" title="Ir al inicio">Inicio</a>
+            <a href="./cliente.html" title="Ver mis clientes">Clientes</a>
+            <a href="./cvu.html" title="Conoce más sobre mí">Sobre mí</a>
+            <a href="./contacto.html" title="Contáctame">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="imagen-fondo flex">
+        <div class="color-fondo">
+            <h2 class="head-2">Estudiante de Ingeniería en Computación</h2>
+            <div class="ubicacion">
+                <img src="./img/ubicacion.png" alt="Ubicación" width="64" height="64" class="icon">
+                <p class="p-ubicacion">Guadalajara, Jalisco</p>
+            </div>
+            <div class="boton-margen">
+                <a class="boton" href="./contacto.html">Contacto</a>
+            </div>
+        </div>      
+    </section>
+
+    <main class="contenedor sombra">
+        <section>
+            <h2 class="head-servicios">Algunos de mis trabajos</h2>
+            <div class="servicios">
+                <!-- Servicio 1 -->    
+                <article class="servicio">
+                    <h3 class="head-3">JavaScript</h3>
+                    <a href="./java.html" title="Ver detalles de JavaScript">
+                        <div class="icon-servicio" aria-hidden="true">
+                            <img src="./img/javascript.png" alt="JavaScript" width="64" height="64" class="icon">
+                        </div>
+                    </a>
+                    <p class="p-servicio">
+                        JavaScript es un lenguaje de programación ampliamente utilizado para el desarrollo web, que permite crear páginas interactivas y dinámicas. Funciona tanto en el lado del cliente como en el servidor a través de entornos como Node.js.
+                    </p>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="servicio">
+                    <h3 class="head-3">Formatos CSS</h3>
+                    <a href="./css.html" title="Ver detalles sobre CSS">
+                        <div class="icon-servicio" aria-hidden="true">
+                            <img src="./img/css.png" alt="CSS" width="64" height="64" class="icon">
+                        </div>
+                    </a>
+                    <p class="p-servicio">
+                        CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para dar estilo y formato a las páginas web. Permite personalizar la apariencia de los elementos HTML, controlando aspectos como colores, fuentes y márgenes.
+                    </p>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article class="servicio">
+                    <h3 class="head-3">Flexbox and Grid</h3>
+                    <a href="./flexGrid.html" title="Ver detalles sobre Flexbox y Grid">
+                        <div class="icon-servicio" aria-hidden="true">
+                            <img src="./img/flex.png" alt="flexgrid" width="64" height="64" class="icon">
+                        </div>
+                    </a>
+                    <p class="p-servicio">
+                        Flexbox y CSS Grid son sistemas de diseño en CSS que facilitan la creación de estructuras adaptables en la web, ideales para distintos tamaños de pantalla.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="formulario">
+            <h2 class="head-servicios">Contacto</h2>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Ingresa tus datos y me pondré en contacto contigo</legend>
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input class="text-input" placeholder="Nombre" type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input class="text-input" placeholder="Teléfono" type="tel" name="telefono" id="telefono" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo electrónico:</label>
+                            <input class="text-input" placeholder="Correo electrónico" type="email" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="text-area" placeholder="Mensaje" name="mensaje" id="mensaje" required></textarea>
+                        </div>
+                    </div>
+                    <div class="align-boton">
+                        <button class="boton" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados - Erick Saúl Padilla Franco</p>
+    </footer>
+</body>
+</html>

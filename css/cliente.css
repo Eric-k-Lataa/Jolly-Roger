@@ -1,0 +1,159 @@
+/* Paleta de colores */
+:root {
+    --color-1: #201e43;
+    --color-2: #134b70;
+    --color-3: #508c9b;
+    --color-4: #eeeeee;
+}
+
+/* Resetear margenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Encabezado principal */
+.header-main {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.header-main span {
+    font-size: 1.2rem;
+    color: var(--color-3);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 2rem;
+    color: var(--color-2);
+}
+
+.image-container {
+    max-width: 100px;
+}
+
+.logo-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Formulario */
+.form-fieldset {
+    border: 2px solid var(--color-2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fieldset-header {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--color-2);
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color-3);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    border-color: var(--color-2);
+    outline: none;
+}
+
+/* Botones */
+.action-button {
+    background-color: var(--color-3);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: var(--color-2);
+}
+
+/* Espaciado y alineación */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el footer o mensaje de reserva */
+footer {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
